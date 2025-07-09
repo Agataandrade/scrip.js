@@ -1,8 +1,11 @@
-// O valor do salário 
-let salario = 10000.00;
-// O valor do abono
-let abono = 1000.00;
-// A somatoria dos dois
+import ler = require("readline-sync");
+
+// Entrada de dados
+let salario = ler.questionInt("Digite o valor do salário: ");
+let abono = ler.questionInt("Digite o valor do abono: ");
+
+// Cálculo do novo salário
 let novoSalario = salario + abono;
-// O resultado final
-console.log("O novo salario é:" + novoSalario);
+
+// Resultado final
+console.log("O novo salário é: R$ " + novoSalario.toFixed(2));
