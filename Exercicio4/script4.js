@@ -1,8 +1,11 @@
-//Valores de cada numero do exemplo 1
-let numero1 = 5.0;
-let numero2 = 6.0;
-let numero3 = 7.0;
-let numero4 = 8.0;
+import ler = require("readline-sync");
+
+// Primeiro exemplo
+console.log("Primeiro exemplo:");
+let numero1 = ler.questionFloat("Digite o valor de numero1: ");
+let numero2 = ler.questionFloat("Digite o valor de numero2: ");
+let numero3 = ler.questionFloat("Digite o valor de numero3: ");
+let numero4 = ler.questionFloat("Digite o valor de numero4: ");
 
 //Soma dos valores
 let calculo = (numero1 * numero2) - (numero3 * numero4);
