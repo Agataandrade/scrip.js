@@ -1,11 +1,11 @@
-//Valor do salario bruto
-let salarioBruto = 2000.00;
-//Valor do adicional noturno
-let adicionalNoturno = 500.00;
-//Valor da hora extra
-let horaExtras = 100.00;
-//Valor de descontos
-let descontos = 200.00;
+import ler = require("readline-sync");
+
+// Entrada de dados
+let salarioBruto = ler.questionFloat("Digite o valor do salário bruto: ");
+let adicionalNoturno = ler.questionFloat("Digite o valor do adicional noturno: ");
+let horaExtras = ler.questionFloat("Digite o valor da hora extra: ");
+let descontos = ler.questionFloat("Digite o valor dos descontos: ");
+
 // Soma de todos os valores
 let salarioLiquido = salarioBruto + adicionalNoturno + (horaExtras * 5) - descontos;
 // Resultado final
